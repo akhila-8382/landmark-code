@@ -1,2 +1,0 @@
-# landmark-code
-landmark description
