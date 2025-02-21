@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Landmark App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Gemini Landmark</h1>
+        <p>AI-Powered Tourist Guide</p>
+        <button id="menu-btn">☰</button>
+    </header>
+
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">AI Features</a></li>
+            <li><a href="#camera">Camera</a></li>
+            <li><a href="#maps">Maps</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>Welcome to Gemini Landmark</h2>
+        <p>Explore this historic site with the power of AI, bringing history to life with smart recommendations and AR experiences.</p>
+    </section>
+
+    <section id="features" class="container">
+        <h2>AI-Powered Features</h2>
+        <ul>
+            <li>🔍 Smart AI Tour Guide</li>
+            <li>📱 Augmented Reality (AR) Experience</li>
+            <li>🌎 Real-Time Language Translation</li>
+            <li>🚀 Personalized Visit Recommendations</li>
+            <li>🗺️ Smart Navigation & Crowd Management</li>
+        </ul>
+    </section>
+
+    <section id="camera" class="container">
+        <h2>Capture the Moment</h2>
+        <video id="camera-view" autoplay></video>
+        <button id="capture-btn">Capture Photo</button>
+        <canvas id="canvas"></canvas>
+    </section>
+
+    <section id="maps" class="container">
+        <h2>Find Gemini Landmark</h2>
+        <input type="text" id="search-box" placeholder="Search for a location...">
+        <button id="search-btn">Search</button>
+        <div id="map"></div>
+    </section>
+
+    <section id="download" class="container">
+        <h2>Download the App</h2>
+        <a href="#" class="download-btn">Get it on Android</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Gemini Landmark | Powered by AI</p>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
